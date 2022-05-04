@@ -16,7 +16,7 @@ def form():
 @loader_blueprint.route('/upload/', methods=['GET', 'POST'])
 def upload():
     try:
-        file = request.files['pic']
+        file = request.files['picture']
         filename = file.name
         content = request.values['content']
         posts = load_posts()
